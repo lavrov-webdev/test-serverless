@@ -7,7 +7,7 @@ app.use(express.json());
 app.get("/hello", (req, res) => {
     var ip = req.headers['x-forwarded-for']
     console.log(`Request from ${ip}`);
-    return res.send("Hello!3");
+    return res.send("Dadlee");
 });
 
 app.listen(process.env.PORT, () => {
